@@ -27,7 +27,7 @@ print(result)
 sheety_endpoint = "https://api.sheety.co/82b43dead2459e5763168b6e69f796a3/workoutTrackcing/workouts"
 
 sheety_header = {
-    "Authorization" : "Basic c3JpdGhpa2E6c3Jpc3JpMjgwNjA4"
+    "Authorization" : os.environ["SHEETY_AUTHORIZATION"]
 }
 
 sheety_body = {
